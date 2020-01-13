@@ -180,3 +180,30 @@ C:\Users\mrcoc\Desktop\PTR - 2 PARTE TODO\Color PS\Demo1\obj\Debug\Demo1.csprojA
 C:\Users\mrcoc\Desktop\PTR - 2 PARTE TODO\Color PS\Demo1\obj\Debug\Demo1.csproj.CopyComplete
 C:\Users\mrcoc\Desktop\PTR - 2 PARTE TODO\Color PS\Demo1\obj\Debug\Demo1.exe
 C:\Users\mrcoc\Desktop\PTR - 2 PARTE TODO\Color PS\Demo1\obj\Debug\Demo1.pdb
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Shaders\MainPS.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Shaders\MainShared.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Shaders\MainVS.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Shaders\Utils.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\x64\d3dcompiler_47.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\x86\d3dcompiler_47.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Demo1.exe.config
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Demo1.exe
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\Demo1.pdb
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.D3DCompiler.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Desktop.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Direct2D1.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Direct3D11.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.DXGI.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Mathematics.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.D3DCompiler.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Desktop.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Direct2D1.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Direct3D11.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.DXGI.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\bin\Debug\SharpDX.Mathematics.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\obj\Debug\Demo1.csprojAssemblyReference.cache
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\obj\Debug\Demo1.csproj.CopyComplete
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\obj\Debug\Demo1.exe
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\AlphaBlending\Demo1\obj\Debug\Demo1.pdb
