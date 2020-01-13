@@ -1,0 +1,49 @@
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\Demo1.exe.config
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\obj\Release\Demo1.exe
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\obj\Release\Demo1.pdb
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\Shaders\MainPS.hlsl
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\Shaders\MainShared.hlsl
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\Shaders\MainVS.hlsl
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\x64\d3dcompiler_47.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\x86\d3dcompiler_47.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\Demo1.exe
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\Demo1.pdb
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.D3DCompiler.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Desktop.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Direct2D1.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Direct3D11.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.DXGI.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Mathematics.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.D3DCompiler.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Desktop.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Direct2D1.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Direct3D11.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.DXGI.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Release\SharpDX.Mathematics.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\Shaders\MainPS.hlsl
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\Shaders\MainShared.hlsl
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\Shaders\MainVS.hlsl
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\x64\d3dcompiler_47.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\x86\d3dcompiler_47.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\Demo1.exe.config
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\Demo1.exe
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\Demo1.pdb
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.D3DCompiler.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Desktop.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Direct2D1.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Direct3D11.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.DXGI.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Mathematics.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.D3DCompiler.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Desktop.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Direct2D1.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Direct3D11.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.DXGI.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Release\SharpDX.Mathematics.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\obj\Release\Demo2.csprojResolveAssemblyReference.cache
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\obj\Release\Demo1.exe
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\obj\Release\Demo1.pdb
