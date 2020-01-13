@@ -64,36 +64,35 @@ namespace Demo
         #if RENDER_CUBE
         Vector3[] vertexPositions = new[]
         {
-            new Vector3( 0.0f,  1.0f, 0.0f ), // TLB 0
-            //new Vector3(  1.0f,  1.0f, -1.0f ), // TRB 1
-            //new Vector3(  1.0f,  1.0f,  1.0f ), // TRF 2
-            //new Vector3( -1.0f,  1.0f,  1.0f ), // TLF 3
-            new Vector3( -1.0f, -1.0f, -1.0f ), // BLB 4
-            new Vector3(  1.0f, -1.0f, -1.0f ), // BRB 5
-            new Vector3(  1.0f, -1.0f,  1.0f ), // BRF 6
-            new Vector3( -1.0f, -1.0f,  1.0f )  // BLF 7
+            // TLB 0
+            
+            new Vector3( -0.5f, 0.0f, 0.5f ),
+            new Vector3( 0.5f, 0.0f, 0.5f ),
+            new Vector3( -0.5f, 0.0f, -0.5f ),
+            new Vector3( 0.5f, 0.0f, -0.5f ),
+        
+            //Top
+            new Vector3( 0.0f, 1.17f, 0.0f )
         };
 
         Vector3[] vertexColors = new[]
         {
-            new Vector3( 0.0f, 0.0f, 1.0f ),
-            new Vector3( 0.0f, 1.0f, 0.0f ),
-            new Vector3( 0.0f, 1.0f, 1.0f ),
-            new Vector3( 1.0f, 0.0f, 0.0f ),
-            new Vector3( 1.0f, 0.0f, 1.0f ),
-            new Vector3( 1.0f, 1.0f, 0.0f ),
-            new Vector3( 1.0f, 1.0f, 1.0f ),
-            new Vector3( 0.0f, 0.0f, 0.0f )
+            new Vector3(0.0f, 1.0f, 0.0f),
+            new Vector3(0.0f, 0.0f, 1.0f),
+            new Vector3(1.0f, 0.0f, 0.0f),
+            new Vector3(0.0f, 1.0f, 1.0f),
+            //TOP
+            new Vector3(0.0f, 1.0f, 0.0f)
         };
 
         int[] vertexIndices = new int[]
         {
-             3, 6, 2,   3, 7, 6, // Front
-             1, 4, 0,   1, 5, 4, // Back
-             0, 7, 3,   0, 4, 7, // Left
-             2, 5, 1,   2, 6, 5, // Right
-             0, 2, 1,   0, 3, 2, // Top
-             7, 5, 6,   7, 4, 5, // Bottom
+             0, 2, 1,
+             1, 2, 3,
+             0, 1, 4,
+             1, 3, 4,
+             3, 2, 4,
+             2, 0, 4,
         };
 
         #else
