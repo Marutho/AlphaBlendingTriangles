@@ -435,7 +435,7 @@ namespace Demo
                 );
 
 
-            Matrix worldMatrix = Matrix.Scaling( 0.5f );
+            Matrix worldMatrix = Matrix.Scaling( 1.0f );
             
 #if !RENDER_CUBE_PERSPECTIVE
             Matrix projectionMatrix = Matrix.OrthoLH( 3.0f, 3.0f, -2.0f, 2.0f );
