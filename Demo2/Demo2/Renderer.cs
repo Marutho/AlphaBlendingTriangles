@@ -7,15 +7,14 @@ namespace Demo
     using System.Diagnostics;
     using System.Runtime.InteropServices;
     using System.Windows.Forms;
-
     using SharpDX;
-    using SharpDX.D3DCompiler;
 
     using D3D11 = SharpDX.Direct3D11;
     using DXGI = SharpDX.DXGI;
 
     using static System.Math;
     using static CoreMath;
+    using SharpDX.D3DCompiler;
 
     public class Renderer : IDisposable
     {
@@ -34,11 +33,17 @@ namespace Demo
         private D3D11.DepthStencilState depthStencilState;
         private D3D11.RasterizerState rasterizerState;
 
+        //BLEND STATE
+        private D3D11.BlendState blendState;
+
+
+
         private D3D11.Buffer trianglePositionVertexBuffer;
         private D3D11.Buffer triangleColorVertexBuffer;
         #if RENDER_CUBE
         private D3D11.Buffer triangleIndexBuffer;
 #endif
+
 
         public bool[] CameraSwitch = new bool[4];
         private const float SPEED_CAMERA = 0.01f;
@@ -165,6 +170,8 @@ namespace Demo
                 depthDSV = new D3D11.DepthStencilView( device, depthStencilBufferTexture, depthStencilViewDesc );
             }
 
+            
+
             var depthStencilDesc = new D3D11.DepthStencilStateDescription()
             {
                 IsDepthEnabled = true,
@@ -207,6 +214,23 @@ namespace Demo
                 SlopeScaledDepthBias = 0.0f
             };
 
+            var blendDesc = new D3D11.BlendStateDescription();
+            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
+            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
+            blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
+            blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.One;
+            blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
+            blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
+            blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
+
+
+
+            //     RenderTarget[0].BlendOpSharpDX.Direct3D11.BlendOperation.Add RenderTarget[0].SrcBlendAlphaSharpDX.Direct3D11.BlendOption.One
+            //     RenderTarget[0].DestBlendAlphaSharpDX.Direct3D11.BlendOption.Zero RenderTarget[0].BlendOpAlphaSharpDX.Direct3D11.BlendOperation.Add
+            //     RenderTarget[0].RenderTargetWriteMaskSharpDX.Direct3D11.ColorWriteMaskFlags.All
+
+
+            blendState = new D3D11.BlendState(device, blendDesc);
             rasterizerState = new D3D11.RasterizerState( device, rasterDesc );
         }
 
@@ -262,6 +286,7 @@ namespace Demo
 
             depthStencilState.Dispose();
             rasterizerState.Dispose();
+            blendState.Dispose();
 
             constantBuffer.Dispose();
             vertexShader.Dispose();
@@ -311,6 +336,9 @@ namespace Demo
 
                 deviceContext.OutputMerger.SetDepthStencilState( depthStencilState, 1 );
                 deviceContext.OutputMerger.SetRenderTargets( depthDSV, backbufferRTV );
+                
+                //alpha blending
+                deviceContext.OutputMerger.SetBlendState(blendState, new SharpDX.Color4(0.0f,0.0f,0.0f,0.0f), 0xFFFFFFFF); 
 
                 deviceContext.ClearDepthStencilView( depthDSV, D3D11.DepthStencilClearFlags.Depth, 1.0f, 0 );
                 deviceContext.ClearRenderTargetView( backbufferRTV, new SharpDX.Color( 32, 103, 178 ) );

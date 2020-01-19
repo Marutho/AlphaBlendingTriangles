@@ -5,6 +5,7 @@
     using System.Drawing;
     using System.Runtime.InteropServices;
     using System.Windows.Forms;
+
     
     using SharpDX.Direct3D;
     using SharpDX.Windows;
