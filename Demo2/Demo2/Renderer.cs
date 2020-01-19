@@ -1,5 +1,6 @@
 ﻿#define RENDER_CUBE
 #define RENDER_CUBE_PERSPECTIVE
+#define MULTIPLE_PYRAMIDS
 
 namespace Demo
 {
@@ -359,25 +360,27 @@ namespace Demo
                 softwareRasterizer.Clear( new Color( 32, 103, 178 ) );
             }
 
+
+            #if MULTIPLE_PYRAMIDS
             if ( mode == RenderMode.RenderModeHardware )
             {
                 UpdateConstantBuffer( data );
 
-                #if RENDER_CUBE
+#if RENDER_CUBE
                 int indexCount = triangleIndexBuffer.Description.SizeInBytes / Utilities.SizeOf<int>();
                 deviceContext.InputAssembler.SetIndexBuffer( triangleIndexBuffer, DXGI.Format.R32_UInt, 0 );
                 deviceContext.DrawIndexed( indexCount, 0, 0 );
-                #else
+#else
                 deviceContext.Draw( vertexCount, 0 );
-                #endif
+#endif
             }
             else
             {
-                #if RENDER_CUBE
+#if RENDER_CUBE
                 // Software indexed draws not implemented
-                #else
+#else
                 softwareRasterizer.Draw( vertexPositions, viewport, data.worldViewProjectionMatrix );
-                #endif
+#endif
 
                 softwareRasterizer.EndFrame();
             }
