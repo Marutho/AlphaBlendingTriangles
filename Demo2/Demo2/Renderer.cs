@@ -214,11 +214,22 @@ namespace Demo
                 SlopeScaledDepthBias = 0.0f
             };
 
+            /* var blendDesc = new D3D11.BlendStateDescription();
+             blendDesc.RenderTarget[0].IsBlendEnabled = true;
+             blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
+             blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
+             blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
+             blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
+             blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
+             blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
+             blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;*/
+
             var blendDesc = new D3D11.BlendStateDescription();
-            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
-            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
+            blendDesc.RenderTarget[0].IsBlendEnabled = true;
+            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.Zero;
+            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.SourceColor;
             blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
-            blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.One;
+            blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
             blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
             blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
             blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
