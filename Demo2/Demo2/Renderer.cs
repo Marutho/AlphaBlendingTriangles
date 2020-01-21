@@ -215,25 +215,26 @@ namespace Demo
                 SlopeScaledDepthBias = 0.0f
             };
 
-            /* var blendDesc = new D3D11.BlendStateDescription();
-             blendDesc.RenderTarget[0].IsBlendEnabled = true;
-             blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
-             blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
-             blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
-             blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
-             blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
-             blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
-             blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;*/
-
-            var blendDesc = new D3D11.BlendStateDescription();
+            /*var blendDesc = new D3D11.BlendStateDescription();
             blendDesc.RenderTarget[0].IsBlendEnabled = true;
-            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.Zero;
-            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.SourceColor;
+            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
+            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
             blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
             blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
             blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
             blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
-            blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
+            blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;*/
+
+           var blendDesc = new D3D11.BlendStateDescription();
+           blendDesc.RenderTarget[0].IsBlendEnabled = true;
+           blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.Zero;
+           blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.SourceColor;
+           blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
+           blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
+           blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
+           blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
+           blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
+
 
 
 
@@ -366,24 +367,26 @@ namespace Demo
             {
                 UpdateConstantBuffer( data );
 
-#if RENDER_CUBE
+            #if RENDER_CUBE
                 int indexCount = triangleIndexBuffer.Description.SizeInBytes / Utilities.SizeOf<int>();
                 deviceContext.InputAssembler.SetIndexBuffer( triangleIndexBuffer, DXGI.Format.R32_UInt, 0 );
                 deviceContext.DrawIndexed( indexCount, 0, 0 );
-#else
+            #else
                 deviceContext.Draw( vertexCount, 0 );
-#endif
+            #endif
             }
             else
             {
-#if RENDER_CUBE
+                #if RENDER_CUBE
                 // Software indexed draws not implemented
-#else
+                #else
                 softwareRasterizer.Draw( vertexPositions, viewport, data.worldViewProjectionMatrix );
-#endif
+                #endif
 
                 softwareRasterizer.EndFrame();
             }
+            #endif
+
         }
 
         public void SetCameraSwitch(int index, bool value)
