@@ -1,6 +1,8 @@
 ﻿#define RENDER_CUBE
 #define RENDER_CUBE_PERSPECTIVE
 #define MULTIPLE_PYRAMIDS
+//#define ALPHABLENDING
+#define ADDITIVEBLENDING
 
 //#define TRIANGLE_3D
 #define PYRAMID_3D
@@ -96,9 +98,10 @@ namespace Demo
             //Top
             new Vector3( 0.0f, 1.0f, 0.0f )
         };
-        
+
 #endif
 
+        #if ALPHABLENDING
         Vector3[] vertexColors = new[]
         {
             new Vector3(1.0f, 0.0f, 0.0f),
@@ -108,6 +111,19 @@ namespace Demo
             //TOP
             new Vector3(1.0f, 0.0f, 0.0f)
         };
+#endif
+
+    #if ADDITIVEBLENDING
+        Vector3[] vertexColors = new[]
+        {
+            new Vector3(1.0f, 0.0f, 0.0f),
+            new Vector3(1.0f, 1.0f, 0.0f),
+            new Vector3(0.0f, 1.0f, 1.0f),
+            new Vector3(0.0f, 0.0f, 1.0f),
+            //TOP
+            new Vector3(1.0f, 1.0f, 1.0f)
+        };
+#endif
 
         int[] vertexIndices = new int[]
         {
@@ -243,15 +259,29 @@ namespace Demo
             blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
             blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;*/
 
-           var blendDesc = new D3D11.BlendStateDescription();
-           blendDesc.RenderTarget[0].IsBlendEnabled = true;
-           blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
-           blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
-           blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
-           blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
-           blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.One;
-           blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
-           blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
+#if ALPHABLENDING
+            var blendDesc = new D3D11.BlendStateDescription();
+            blendDesc.RenderTarget[0].IsBlendEnabled = true;
+            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
+            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
+            blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
+            blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
+            blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.One;
+            blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
+            blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
+#endif
+
+#if ADDITIVEBLENDING
+            var blendDesc = new D3D11.BlendStateDescription();
+            blendDesc.RenderTarget[0].IsBlendEnabled = true;
+            blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
+            blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.DestinationAlpha;
+            blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
+            blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.One;
+            blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.One;
+            blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
+            blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
+#endif
 
 
 
