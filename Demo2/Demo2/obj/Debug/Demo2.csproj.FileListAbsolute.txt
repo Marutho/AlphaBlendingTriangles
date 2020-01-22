@@ -1,0 +1,161 @@
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\Demo1.exe.config
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\obj\Debug\Demo1.exe
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\obj\Debug\Demo1.pdb
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\Shaders\MainPS.hlsl
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\Shaders\MainShared.hlsl
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\Shaders\MainVS.hlsl
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\x64\d3dcompiler_47.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\x86\d3dcompiler_47.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\Demo1.exe
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\Demo1.pdb
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Desktop.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.DXGI.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Desktop.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.DXGI.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\jjimenez\Desktop\USJ\Solutions\Demo2\Demo2\obj\Debug\Demo2.csprojResolveAssemblyReference.cache
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\Demo1.exe.config
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\obj\Debug\Demo1.exe
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\obj\Debug\Demo1.pdb
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\Shaders\MainPS.hlsl
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\Shaders\MainShared.hlsl
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\Shaders\MainVS.hlsl
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\x64\d3dcompiler_47.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\x86\d3dcompiler_47.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\Demo1.exe
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\Demo1.pdb
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Desktop.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.DXGI.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Desktop.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.DXGI.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\jjimenez\Desktop\USJ\Demo2\Demo2\obj\Debug\Demo2.csprojResolveAssemblyReference.cache
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Shaders\MainPS.hlsl
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Shaders\MainShared.hlsl
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Shaders\MainVS.hlsl
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\x64\d3dcompiler_47.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\x86\d3dcompiler_47.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Demo1.exe.config
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Demo1.exe
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Demo1.pdb
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Desktop.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.DXGI.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.dll
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Desktop.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.DXGI.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.xml
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\obj\Debug\Demo2.csprojResolveAssemblyReference.cache
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\obj\Debug\Demo1.exe
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\obj\Debug\Demo1.pdb
+E:\OneDrive\Work\Universidad de San Jorge\Demo2\Demo2\bin\Debug\Shaders\Utils.hlsl
+D:\OneDrive\Work\Universidad de San Jorge\Exercises\Demo2\Demo2\bin\Debug\Demo1.exe.config
+D:\OneDrive\Work\Universidad de San Jorge\Exercises\Demo2\Demo2\obj\Debug\Demo1.exe
+D:\OneDrive\Work\Universidad de San Jorge\Exercises\Demo2\Demo2\obj\Debug\Demo1.pdb
+D:\OneDrive\Work\Universidad de San Jorge\Exercises\Demo2\Demo2\obj\Debug\Demo2.csprojResolveAssemblyReference.cache
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Shaders\MainPS.hlsl
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Shaders\MainShared.hlsl
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Shaders\MainVS.hlsl
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Shaders\Utils.hlsl
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\x64\d3dcompiler_47.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\x86\d3dcompiler_47.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Demo1.exe.config
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Demo1.exe
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\Demo1.pdb
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Desktop.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.DXGI.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Desktop.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.DXGI.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\obj\Debug\Demo2.csprojAssemblyReference.cache
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\obj\Debug\Demo2.csproj.CopyComplete
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\obj\Debug\Demo1.exe
+C:\Users\auber\source\repos\GRAFICOS\Demo2\Demo2\obj\Debug\Demo1.pdb
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\MainPS.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\MainShared.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\MainVS.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\Utils.hlsl
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\x64\d3dcompiler_47.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\x86\d3dcompiler_47.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Demo1.exe.config
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Demo1.exe
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Demo1.pdb
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Desktop.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.DXGI.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.dll
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Desktop.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.DXGI.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.xml
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo2.csprojAssemblyReference.cache
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo2.csproj.CopyComplete
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo1.exe
+C:\GitHubAlvaroJavi\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo1.pdb
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\MainPS.hlsl
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\MainShared.hlsl
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\MainVS.hlsl
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Shaders\Utils.hlsl
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\x64\d3dcompiler_47.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\x86\d3dcompiler_47.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Demo1.exe.config
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Demo1.exe
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\Demo1.pdb
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Desktop.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.DXGI.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.dll
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.D3DCompiler.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Desktop.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct2D1.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Direct3D11.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.DXGI.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\bin\Debug\SharpDX.Mathematics.xml
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo2.csprojAssemblyReference.cache
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo2.csproj.CopyComplete
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo1.exe
+D:\Programming\GitHub\AlphaBlendingTriangles\Demo2\Demo2\obj\Debug\Demo1.pdb
