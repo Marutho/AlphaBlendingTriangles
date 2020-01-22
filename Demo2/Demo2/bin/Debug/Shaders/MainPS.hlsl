@@ -3,5 +3,5 @@
 
 float4 main( OutputVS input  ) : SV_TARGET
 {
-	return float4( input.color, 1.0 );
+	return float4( input.color, 0.1 );
 }
