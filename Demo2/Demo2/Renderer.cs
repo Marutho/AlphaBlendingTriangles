@@ -2,6 +2,9 @@
 #define RENDER_CUBE_PERSPECTIVE
 #define MULTIPLE_PYRAMIDS
 
+//#define TRIANGLE_3D
+#define PYRAMID_3D
+
 namespace Demo
 {
     using System;
@@ -47,6 +50,7 @@ namespace Demo
 
 
         public bool[] CameraSwitch = new bool[4];
+        public bool[] AlphaSwitch = new bool[5];
         private const float SPEED_CAMERA = 0.01f;
 
         [StructLayout( LayoutKind.Sequential )]
@@ -55,6 +59,7 @@ namespace Demo
             public Matrix worldViewProjectionMatrix;
             public float time;
             public Vector3 padding;
+            public Vector4 alpha;
         };
         private D3D11.Buffer constantBuffer;
 
@@ -67,28 +72,41 @@ namespace Demo
             new D3D11.InputElement( "COLOR",    0, DXGI.Format.R32G32B32_Float, 1 )
         };
 
-        #if RENDER_CUBE
+#if RENDER_CUBE
+
+#if TRIANGLE_3D
         Vector3[] vertexPositions = new[]
         {
-            // TLB 0
-            
+            // Base
+            new Vector3( -0.5f, 0.0f, -0.0f ),
+            new Vector3( 0.5f, 0.0f, -0.0f ),
+        
+            //Top
+            new Vector3( 0.0f, 1.0f, 0.0f )
+        };
+#elif PYRAMID_3D
+        Vector3[] vertexPositions = new[]
+        {
+            // Base
             new Vector3( -0.5f, 0.0f, 0.5f ),
             new Vector3( 0.5f, 0.0f, 0.5f ),
             new Vector3( -0.5f, 0.0f, -0.5f ),
             new Vector3( 0.5f, 0.0f, -0.5f ),
         
             //Top
-            new Vector3( 0.0f, 1.17f, 0.0f )
+            new Vector3( 0.0f, 1.0f, 0.0f )
         };
+        
+#endif
 
         Vector3[] vertexColors = new[]
         {
-            new Vector3(0.0f, 1.0f, 0.0f),
-            new Vector3(0.0f, 0.0f, 1.0f),
             new Vector3(1.0f, 0.0f, 0.0f),
-            new Vector3(0.0f, 1.0f, 1.0f),
+            new Vector3(1.0f, 0.0f, 0.0f),
+            new Vector3(1.0f, 0.0f, 0.0f),
+            new Vector3(1.0f, 0.0f, 0.0f),
             //TOP
-            new Vector3(0.0f, 1.0f, 0.0f)
+            new Vector3(1.0f, 0.0f, 0.0f)
         };
 
         int[] vertexIndices = new int[]
@@ -101,7 +119,7 @@ namespace Demo
              2, 0, 4,
         };
 
-        #else
+#else
         Vector3[] vertexPositions = new Vector3[] { new Vector3( 0.5f, -0.5f, 0.0f ), new Vector3( -0.5f, -0.5f, 0.0f ), new Vector3( 0.0f, 0.5f, 0.0f ) };
         Vector3[] vertexColors    = new Vector3[] { new Vector3( 1.0f, 0.0f, 0.0f ),  new Vector3( 0.0f, 1.0f,  0.0f ),  new Vector3( 0.0f , 0.0f, 1.0f ) };
         #endif
@@ -227,11 +245,11 @@ namespace Demo
 
            var blendDesc = new D3D11.BlendStateDescription();
            blendDesc.RenderTarget[0].IsBlendEnabled = true;
-           blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.Zero;
-           blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.SourceColor;
+           blendDesc.RenderTarget[0].SourceBlend = D3D11.BlendOption.SourceAlpha;
+           blendDesc.RenderTarget[0].DestinationBlend = D3D11.BlendOption.InverseSourceAlpha;
            blendDesc.RenderTarget[0].BlendOperation = D3D11.BlendOperation.Add;
            blendDesc.RenderTarget[0].SourceAlphaBlend = D3D11.BlendOption.Zero;
-           blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.Zero;
+           blendDesc.RenderTarget[0].DestinationAlphaBlend = D3D11.BlendOption.One;
            blendDesc.RenderTarget[0].AlphaBlendOperation = D3D11.BlendOperation.Add;
            blendDesc.RenderTarget[0].RenderTargetWriteMask = D3D11.ColorWriteMaskFlags.All;
 
@@ -252,6 +270,7 @@ namespace Demo
             ConstantBufferCPU data = new ConstantBufferCPU();
             data.worldViewProjectionMatrix = Matrix.Identity;
             data.time = 0.0f;
+            data.padding = Vector3.Zero;
             constantBuffer = D3D11.Buffer.Create( device, D3D11.BindFlags.ConstantBuffer, ref data );
 
             string textVS = System.IO.File.ReadAllText( "Shaders\\MainVS.hlsl" );
@@ -363,6 +382,7 @@ namespace Demo
 
 
             #if MULTIPLE_PYRAMIDS
+
             if ( mode == RenderMode.RenderModeHardware )
             {
                 UpdateConstantBuffer( data );
@@ -394,6 +414,11 @@ namespace Demo
             CameraSwitch[index] = value;
         }
 
+        public void SetAlphaSwitch(int index, bool value)
+        {
+            AlphaSwitch[index] = value;
+        }
+
         public Matrix lastRotation = new Matrix(
                 1, 0, 0, 0,
                 0, 1, 0, 0,
@@ -410,7 +435,24 @@ namespace Demo
             float aspectRatio = (float) width / height;
 
             Matrix rotation = new Matrix();
-            
+
+            float alphaValue = 0.0f;
+
+
+            if (AlphaSwitch[0])
+                alphaValue = 0.0f;
+
+            if (AlphaSwitch[1])
+                alphaValue = 0.25f;
+
+            if (AlphaSwitch[2])
+                alphaValue = 0.5f;
+
+            if (AlphaSwitch[3])
+                alphaValue = 0.75f;
+
+            if (AlphaSwitch[4])
+                alphaValue = 1.0f;
 
             if (CameraSwitch[0])
             {
@@ -495,10 +537,9 @@ namespace Demo
             Matrix projectionMatrix = Matrix.PerspectiveFovLH( 2.0f * (float) PI * Remap( 0.0f, 360.0f, 45.0f ), aspectRatio, 0.01f, 1000.0f );
 #endif
             data.worldViewProjectionMatrix = worldMatrix * viewMatrix * projectionMatrix;
-            //data.worldViewProjectionMatrix *= ;
             data.time = time;
             data.padding = Vector3.Zero;
-
+            data.alpha = new Vector4(Vector3.Zero, alphaValue);
             return data;
         }
 
@@ -519,7 +560,7 @@ namespace Demo
 
             data.time = time;
             data.padding = Vector3.Zero;
-
+            data.alpha = new Vector4(Vector3.Zero, 0.5f);
             return data;
         }
 

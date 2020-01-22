@@ -141,6 +141,53 @@
             if (key == Keys.S)
                 renderer.SetCameraSwitch(3, true);
 
+            if (key == Keys.D1)
+            {
+                renderer.SetAlphaSwitch(0, true);
+                renderer.SetAlphaSwitch(1, false);
+                renderer.SetAlphaSwitch(2, false);
+                renderer.SetAlphaSwitch(3, false);
+                renderer.SetAlphaSwitch(4, false);
+            }
+
+            if (key == Keys.D2)
+            {
+                renderer.SetAlphaSwitch(0, false);
+                renderer.SetAlphaSwitch(1, true);
+                renderer.SetAlphaSwitch(2, false);
+                renderer.SetAlphaSwitch(3, false);
+                renderer.SetAlphaSwitch(4, false);
+            }
+
+            if (key == Keys.D3)
+            {
+                renderer.SetAlphaSwitch(0, false);
+                renderer.SetAlphaSwitch(1, false);
+                renderer.SetAlphaSwitch(2, true);
+                renderer.SetAlphaSwitch(3, false);
+                renderer.SetAlphaSwitch(4, false);
+            }
+
+            if (key == Keys.D4)
+            {
+                renderer.SetAlphaSwitch(0, false);
+                renderer.SetAlphaSwitch(1, false);
+                renderer.SetAlphaSwitch(2, false);
+                renderer.SetAlphaSwitch(3, true);
+                renderer.SetAlphaSwitch(4, false);
+            }
+
+            if (key == Keys.D5)
+            {
+                renderer.SetAlphaSwitch(0, false);
+                renderer.SetAlphaSwitch(1, false);
+                renderer.SetAlphaSwitch(2, false);
+                renderer.SetAlphaSwitch(3, false);
+                renderer.SetAlphaSwitch(4, true);
+            }
+
+
+
             SetTitle();
         }
 
