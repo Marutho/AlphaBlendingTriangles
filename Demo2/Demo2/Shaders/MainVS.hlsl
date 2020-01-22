@@ -10,7 +10,11 @@ struct InputVS
 OutputVS main( InputVS input )
 {
 	OutputVS output;
-	output.position = mul( worldViewProjectionMatrix, input.position );
+
+	float4 newPosition = input.position;
+	newPosition.xyz += padding.xyz * 0.1;
+	output.position = mul(worldViewProjectionMatrix, newPosition);
+
 	output.color = input.color.rgb;
 	return output;
 }

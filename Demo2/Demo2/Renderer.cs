@@ -1,11 +1,11 @@
 ﻿#define RENDER_CUBE
 #define RENDER_CUBE_PERSPECTIVE
 #define MULTIPLE_PYRAMIDS
-//#define ALPHABLENDING
-#define ADDITIVEBLENDING
+#define ALPHABLENDING
+//#define ADDITIVEBLENDING
 
-//#define TRIANGLE_3D
-#define PYRAMID_3D
+#define TRIANGLE_3D
+//#define PYRAMID_3D
 
 namespace Demo
 {
@@ -411,31 +411,36 @@ namespace Demo
             }
 
 
-            #if MULTIPLE_PYRAMIDS
-
-            if ( mode == RenderMode.RenderModeHardware )
+            if (mode == RenderMode.RenderModeHardware)
             {
-                UpdateConstantBuffer( data );
+                UpdateConstantBuffer(data);
 
             #if RENDER_CUBE
                 int indexCount = triangleIndexBuffer.Description.SizeInBytes / Utilities.SizeOf<int>();
-                deviceContext.InputAssembler.SetIndexBuffer( triangleIndexBuffer, DXGI.Format.R32_UInt, 0 );
-                deviceContext.DrawIndexed( indexCount, 0, 0 );
+                deviceContext.InputAssembler.SetIndexBuffer(triangleIndexBuffer, DXGI.Format.R32_UInt, 0);
+                deviceContext.DrawIndexed(indexCount, 0, 0);
             #else
                 deviceContext.Draw( vertexCount, 0 );
             #endif
             }
-            else
-            {
-                #if RENDER_CUBE
-                // Software indexed draws not implemented
-                #else
-                softwareRasterizer.Draw( vertexPositions, viewport, data.worldViewProjectionMatrix );
-                #endif
 
-                softwareRasterizer.EndFrame();
+
+            #if MULTIPLE_PYRAMIDS
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (mode == RenderMode.RenderModeHardware)
+                {
+                    data.padding = new Vector3(0.5f * -i, 0.5f * -i, 0.5f * -i);
+                    data.alpha.W = 0.1f * i;
+                    UpdateConstantBuffer(data);
+                    int indexCount = triangleIndexBuffer.Description.SizeInBytes / Utilities.SizeOf<int>();
+                    deviceContext.InputAssembler.SetIndexBuffer(triangleIndexBuffer, DXGI.Format.R32_UInt, 0);
+                    deviceContext.DrawIndexed(indexCount, 0, 0);
+                }
             }
             #endif
+
 
         }
 
